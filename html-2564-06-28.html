@@ -32,7 +32,7 @@
 
 </html>
     <!-- text formatting -->
-    <b><u><i>คณะวิทยาการจัดการ</i></u></>
+    <b><u><i>คณะวิทยาการจัดการ</i></u></b>
     <br>
     <strong>มหาวิทยาลัยสงขลานครินทร์</strong>
     <br>
@@ -91,7 +91,7 @@
 
     <!-- form -->
     <h2>เข้่าสู่ระบบ</h2>
-    <form method="GET" action="check_login.html">
+    <form method="GET" action="check_login.html"enctype="multipart/form-data">
         <!-- <label for="username">รหัสผู้ใช้งาน</label> -->
         <input type="text" id="username" placeholder="รหัสผู้ใช้งาน">
         <br> 
@@ -106,14 +106,14 @@
         <input type="radio" name="user_type">นักศึกษา
         <input type="radio" name="user_type">อาจารย์
         <br>
-        <label for="desc">รายละเอียด</label>
+        <!-- <label for="desc">รายละเอียด</label> -->
         <textarea d="desc" rows="5"></textarea>
         <br>
         <input type="file">
         <br>
         <select name="type">สถานะ
-            <option value="student">นักศึกษา</option>
-            <option value="lecturer">อาจารย์</option>
+            <option value="0">ใช้งาน</option>
+            <option value="1">ยกเลิก </option>
 
         </select>
         <br>
