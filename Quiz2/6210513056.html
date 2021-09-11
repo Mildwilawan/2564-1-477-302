@@ -18,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            background-color: rgb(248, 195, 195);
+        }
+    </style>
 
     <script>
         function show_dialog() {
@@ -106,33 +111,6 @@
         }
     </script>
 
-    <style>
-        button {
-            background-color: #4CAF50;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-
-        button {
-            background-color: white;
-            color: black;
-            border: 2px solid #4CAF50;
-        }
-
-        button:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -152,8 +130,8 @@
     <div align=center>
         <dialog id="myDialog">
             <p id="showname">test</p>
-            <button onclick="getLocation(), clickCounter()">แสดงตำแหน่งปัจจุบัน</button>
-            <button onclick="del()">ล้างข้อมูล</button>
+            <button type="button" class="btn btn-secondary" onclick="getLocation(), clickCounter()">แสดงตำแหน่งปัจจุบัน</button>
+            <button type="button" class="btn btn-secondary" onclick="del()">ล้างข้อมูล</button>
             <p id="demo"></p>
             <div id="mapholder"></div><br>
             <p id="counter"></p>
